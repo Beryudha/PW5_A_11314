@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang= "en" >
+<html lang="en">
 
 
 <head>
@@ -33,18 +33,18 @@
 
         .background-radial-gradient {
             background-color: hsl(218, 41%, 15%) ;
-            background-image: radial-gradient(650px circle a t 0 % 0 %,
+            background-image: radial-gradient(650px circle at 0% 0%,
                 hsl(218, 41%, 35%) 15%,
                 hsl(218, 41%, 30%) 35%,
                 hsl(218, 41%, 20%) 75%,
                 hsl(218, 41%, 19%) 80%,
-                transparent 100%) ,
-            radial-gradient(1250px circle a t 100% 100%,
+                transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
                 hsl(218, 41%, 45%) 15%,
                 hsl(218, 41%, 30%) 35%,
                 hsl(218, 41%, 20%) 75%,
                 hsl(218, 41%, 19%) 80%,
-                transparent 100%) ;
+                transparent 100%);
         }
 
         #radius-shape-1 {
@@ -52,7 +52,7 @@
             width: 220px;
             top: -60px;
             left: -130px;
-            background: radial-gradient( #44006b, #ad1fff) ;
+            background: radial-gradient(#44006b, #ad1fff);
             overflow: hidden;
         }
 
@@ -62,7 +62,7 @@
             right: -110px;
             width: 300px;
             height: 300px;
-            background: radial-gradient( #44006b, #ad1fff) ;
+            background: radial-gradient(#44006b,#ad1fff) ;
             overflow: hidden;
         }
 
@@ -78,7 +78,7 @@
             <div class= "row gx-lg-5 align-items-center mb-5" >
                 <div class= "col-lg-6 mb-5 mb-lg-0" style= "z-index: 10" >
                     <h1 class= "my-5 display-5 fw-bold ls-tight" style= "color: hsl(218, 81%, 95%)" >
-                        Gofit Indonesia<br />
+                        Gofit Indonesia<br/>
                         <span style= "color: hsl(218, 81%, 75%)" >Make Your Body Perfect</span>
                     </h1>
                     <p class= "mb-4 opacity-70 justify-content-center" 
@@ -140,8 +140,8 @@
             </div>
         </div>
     </section>
-    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-        integrity= "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity= "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin= "anonymous" >
     </script>
 </body>
