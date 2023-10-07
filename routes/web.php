@@ -23,6 +23,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/gyms', function () {
     return view('Gyms/index', [
+        "title" => "Index",
         'kelas' => [
             [
                 'no' => 1,
@@ -56,6 +57,27 @@ Route::get('/gyms', function () {
                 'instruktur' => 'Tebri',
                 'ruang' => 'Kelas D',
                 'rating' => '5',
+            ]
+        ],
+        
+    ]);
+});
+
+Route::get('/presensi', function () {
+    return view('Gyms/presensi', [
+        "title" => "Presensi",
+        "nama" => "Bernardus Anggodho Aryudhawan Hadi",
+        "ruang" => "Kelas A",
+        "totMember" => "6",
+        "rating" => "10",
+        'member' => [
+            [
+                'no' => 1,
+                "gambar" => "https://www.fitnessfirst.co.id/id/-/media/project/evolution-wellness/fitness-first/south-east-asia/indonesia/classes/bodycombat/bodycombat_fb-sharing.png",
+                "nama" => "Body Combat",
+                'instruktur' => 'Jolly',
+                'ruang' => 'Kelas A',
+                'rating' => '5'
             ]
         ]
     ]);
