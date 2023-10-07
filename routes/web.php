@@ -67,17 +67,52 @@ Route::get('/presensi', function () {
     return view('Gyms/presensi', [
         "title" => "Presensi",
         "nama" => "Bernardus Anggodho Aryudhawan Hadi",
+        "npm" => "210711314",
         "ruang" => "Kelas A",
         "totMember" => "6",
         "rating" => "10",
         'member' => [
             [
-                'no' => 1,
-                "gambar" => "https://www.fitnessfirst.co.id/id/-/media/project/evolution-wellness/fitness-first/south-east-asia/indonesia/classes/bodycombat/bodycombat_fb-sharing.png",
-                "nama" => "Body Combat",
-                'instruktur' => 'Jolly',
-                'ruang' => 'Kelas A',
-                'rating' => '5'
+                'namaMember' => 'test',
+                'email' => '@gmail.com',
+                'telp' => '123',
+                'jenisKartu' => 'Gold',
+                'metodePembayaran' => 'Deposit Kelas'
+            ],
+            [
+                'namaMember' => 'test2',
+                'email' => '@gmail.com',
+                'telp' => '123',
+                'jenisKartu' => 'Silver',
+                'metodePembayaran' => 'Deposit Uang'
+            ],
+            [
+                'namaMember' => 'test3',
+                'email' => '@gmail.com',
+                'telp' => '123',
+                'jenisKartu' => 'Black',
+                'metodePembayaran' => 'Deposit Kelas'
+            ],
+            [
+                'namaMember' => 'test4',
+                'email' => '@gmail.com',
+                'telp' => '123',
+                'jenisKartu' => 'Gold',
+                'metodePembayaran' => 'Deposit Uang'
+            ],
+            [
+                'namaMember' => 'test5',
+                'email' => '@gmail.com',
+                'telp' => '123',
+                'jenisKartu' => 'Silver',
+                'metodePembayaran' => 'Deposit Kelas'
+            ],
+            [
+                'namaMember' => 'test6',
+                'email' => '@gmail.com',
+                'telp' => '123',
+                'jenisKartu' => 'Black',
+                'metodePembayaran' => 'Deposit Uang'
             ]
         ]
     ]);

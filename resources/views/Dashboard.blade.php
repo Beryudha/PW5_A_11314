@@ -19,12 +19,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
         crossorigin="anonymous">
-
-    <style>
-        .modal-header {
-            background-color: dodgerblue;
-        }
-    </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -49,7 +43,7 @@
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#logoutModal">
                         <i class="fa-solid fa-right-from-bracket"></i> Logout
                         </button>
-                           
+   
                         <div class="navbar-search-block">
                             <form class="form-inline">
                                 <div class="input-group input-group-sm">
@@ -150,6 +144,23 @@
         </div>
         <!-- ./wrapper -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="logoutModal" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-bg-primary">
+                        <h5 class="modal-title fs-5" id="staticBackdropLabel">Apakah Ingin Logout?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-danger" href="{{ url('/') }}">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
     <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
@@ -165,20 +176,6 @@
     <!-- AdminLTE App -->
     <script src="{{ asset('js/adminlte.min.js') }}"></script>
 
-    <!-- Modal -->
-    <div class="modal fade" id="logoutModal" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fs-5" id="staticBackdropLabel">Apakah Ingin Logout?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a type="button" class="btn btn-danger" href="{{ url('/') }}">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </body>
 </html>
