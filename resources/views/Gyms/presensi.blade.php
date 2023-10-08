@@ -21,7 +21,7 @@
                         <i class="fa-solid fa-eye"></i>
                         </button>
 
-                        <!-- Modal -->
+                        <!--Detail Modal -->
                         <div class="modal fade" id="detailModal" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -33,7 +33,7 @@
                                         <h5><strong>Body Combat</strong></h5>    
                                         <p>
                                             Nama Instruktur     : {{ $nama }}<br>
-                                            <!-- Kode Instruktur     : {{ $npm }}<br>
+                                            Kode Instruktur     : {{ $npm }}<br>
                                             Hari Kelas          : {{ date('l') }}<br>
                                             Tanggal Kelas       : {{ date('d-M-Y') }}<br>
                                             Ruang               : {{ $ruang }}<br>
@@ -47,7 +47,7 @@
                                             <i class="fas fa-star fa-xs" style="color: black"></i>
                                             <i class="fas fa-star fa-xs" style="color: black"></i>
                                             <i class="fas fa-star fa-xs" style="color: black"></i>
-                                            <i class="fas fa-star fa-xs" style="color: black"></i> -->
+                                            <i class="fas fa-star fa-xs" style="color: black"></i>
                                         </p>
                                     </div>
                                 </div>
